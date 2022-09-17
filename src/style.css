@@ -1,0 +1,15 @@
+.user-entries{
+  margin-top: 20vh; 
+  padding: 50px;
+
+}
+
+.table-cell {
+  padding: 4px 12px ;
+  text-align: right;
+}
+
+label{
+  font-weight: bold;
+}
+
