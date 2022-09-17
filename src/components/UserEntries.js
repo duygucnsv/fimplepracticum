@@ -80,7 +80,7 @@ const UserEntries = () => {
           <Col md={3}>
             <Select
               className="mb-3"
-              label="Installment"
+              label="Installment Interval"
               placeholder="Select"
               value={installmentInterval}
               options={installmentIntervals}

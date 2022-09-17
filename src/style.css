@@ -1,7 +1,9 @@
 .user-entries{
   margin-top: 20vh; 
   padding: 50px;
-
+  background-color: #cae3f7;
+ border-radius: 10px;
+ box-shadow: 5px 5px 5px #878889;
 }
 
 .table-cell {
@@ -12,4 +14,6 @@
 label{
   font-weight: bold;
 }
+
+
 
