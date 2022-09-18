@@ -10,7 +10,10 @@ That's a simple project that I use to learn more about React Hooks
 
 ## The Project
 
-![tic1](https://github.com/duygucnsv/tictactoe/blob/master/x.png)
+![tic1](https://github.com/duygucnsv/fimplepracticum/blob/main/userentriespage.png)
+
+![tic1](https://github.com/duygucnsv/fimplepracticum/blob/main/modalpage.png)
+
 
 
 
