@@ -42,7 +42,7 @@
 
 </ul> <br/>
 
-#Setup
+# Setup
 
 # Install server dependencies
 npm install
