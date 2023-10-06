@@ -7,7 +7,7 @@ import {
   setInstallment,
   setProfitRate,
   setInstallmentInterval,
-  setTaxRate,
+  
 } from "../store/userEntries/userEntriesAction";
 
 import { calculate } from "../store/paymentEntries/paymentAction";
@@ -15,11 +15,10 @@ import { calculate } from "../store/paymentEntries/paymentAction";
 import Input from "./Input";
 import {
   installments,
-  taxRates,
+
   installmentIntervals,
 } from "../config/constants";
 import Select from "./Select";
-import ModalPages from "./ModalTable";
 import ModalTable from "./ModalTable";
 
 const UserEntries = () => {
@@ -34,7 +33,7 @@ const UserEntries = () => {
     dispatchUserEntries,
     dispatchPayment,
   } = useStore();
-  const { capital, installment, profitRate, installmentInterval, taxRate } =
+  const { capital, installment, profitRate, installmentInterval} =
     userEntriesState;
   const { totalPayment, totalTaxAmount, monthlyPayment } = paymentState;
   const [show, setShow] = useState(false);
@@ -66,7 +65,7 @@ const UserEntries = () => {
               }}
             />
           </Col>
-          <Col md={3}>
+          <Col md={4}>
             <Select
               label="Installment"
               value={installment}
@@ -77,7 +76,10 @@ const UserEntries = () => {
               }}
             />
           </Col>
-          <Col md={3}>
+        </Row>
+
+        <Row>
+          <Col md={4}>
             <Select
               className="mb-3"
               label="Installment Interval"
@@ -89,9 +91,6 @@ const UserEntries = () => {
               }}
             />
           </Col>
-        </Row>
-
-        <Row>
           <Col md={4}>
             <Input
               label="Profit Rate"
@@ -99,18 +98,6 @@ const UserEntries = () => {
               value={profitRate}
               onChange={(e) => {
                 dispatchUserEntries(setProfitRate(e.target.value));
-              }}
-            />
-          </Col>
-
-          <Col md={3}>
-            <Select
-              label="Tax Rate"
-              placeholder="Select"
-              options={taxRates}
-              value={taxRate}
-              onChange={(e) => {
-                dispatchUserEntries(setTaxRate(e.target.value));
               }}
             />
           </Col>
